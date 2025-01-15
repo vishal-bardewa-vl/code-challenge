@@ -1,8 +1,12 @@
+import { deletePokemon } from '../../../apps/app/src/redux/pokemonSlice';
 import './list.scss';
+import { useDispatch } from 'react-redux'
 
 const Card = ({name}: {name: string}) => {
-  return <div>
+  const dispatch = useDispatch()
+  return <div className='card'>
     <p>{name}</p>
+    <button onClick={() => dispatch(deletePokemon(name))}>Delete</button>
   </div>
   
 }

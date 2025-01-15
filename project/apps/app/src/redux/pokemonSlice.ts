@@ -12,7 +12,7 @@ export const pokemonSlice = createSlice({
       state.pokemons = [...action.payload]
     },
     deletePokemon: (state: any, action : any) => {
-        state.pokemons = state.pokemons.filter((s: any) => action.payload !== s.name)
+        state.pokemons = state.pokemons.filter((s: any) => action.payload !== s.name) 
     }
   },
 })

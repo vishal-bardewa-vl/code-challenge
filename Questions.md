@@ -9,3 +9,6 @@ Ans: In createSlice, the action creators and action types are made implicitly an
 
 Question 5: Describe the benefits of immutable code.
 Ans: Improved code readability, easier debugging and predictable state management
+
+Question 6: How can you verify the action has been dispatched?
+Ans: By making use of the Redux Dev Tool extension installed via Chrome Store. We can trace down the details on what actions have been fired.
